@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* cursor: none; */
+    scroll-behavior: smooth;
+}
+
+.mouse{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color:#0267405a;
+    pointer-events: none;
+    z-index: 10;
+}
+.first{
+    width: 100%;
+    height: 100%;
+    background-color:#006f44;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.outerBox{
+  width: 80%;
+  height: 80%;
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 10px white;
+  -webkit-box-shadow: 0 0 2px 2px white;
+  
+}
+nav{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    gap: 80px;
+    overflow: hidden;
+}
+ .logo{
+   width: 100px;
+   height: 100%;
+   background-image: url("https://logos-world.net/wp-content/uploads/2020/09/Starbucks-Logo.png");
+   background-position: left;
+   background-size: 100px;
+   background-repeat: no-repeat;
+}
+nav .options{
+    height: 100%;
+    padding: 20px 0px;
+    display: flex;
+    font-size: 20px;
+    font-weight: 800;
+    gap: 20px;
+    color: darkgrey;
+}
+nav .options :hover{
+    color: #006f44;
+}
+form{
+    width: 300px;
+    height: 100%;
+    display: flex;
+}
+input{
+    height: 30px;
+    width: 100%;
+    padding-left: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border:none;
+    border-bottom: 1px solid darkgray;
+    outline: none;
+    box-shadow: none;
+    font-size: 15px;
+    background-color: whitesmoke; 
+}
+input:focus{
+    outline: none;
+}
+form i {
+    transform: translateX(-15px);
+    color: darkgray;
+}
+.main{
+    display: flex;
+    width: 100%;
+    padding-left: 40px;
+}
+.main .right{
+    width: 30%;
+}
+.right img{
+   height: 500px;
+   transform: translate(110px,-50px);
+}
+.left :nth-child(1){
+    font-size: 120px;
+    font-weight: 900;
+    color: rgba(128, 128, 128, 0.11);
+}
+.left :nth-child(2){
+    font-size: 50px;
+    font-weight: 900;
+    transform: translateY(-80px);
+    line-height: 40px;
+}
+.left :nth-child(3){
+    transform: translateY(-65px);
+}
+.left{
+    overflow: hidden;
+}
+.left button{
+    scale: 0;
+    width: 170px;
+    height: 50px;
+    background-color: #006f44;
+    color: whitesmoke;
+    font-weight: 900;
+    border: #006f44;
+    padding: 0px 10px;
+    transform: translate(10px,-50px);
+}
+
+.second{
+    width: 100%;
+    height: 100%;
+    background-color:#006f44 ;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.outerBox2{
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+  background-color: whitesmoke;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 10px white;
+  -webkit-box-shadow: 0 0 2px 2px white;
+}
+.quote{
+    color: #006f44;
+    font-size: 30px;
+    font-weight:bolder;
+    float: right;
+}
+.drinks{
+    width: 100%;
+    height: 100%;
+    white-space: nowrap; 
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch
+}
+.drinks::-webkit-scrollbar{
+    display: none;
+}
+.drinks div{
+    display: inline-block; 
+    transform: translateY(80px);
+    width: 20%;
+    height: 240px;
+    background-color: #dddd;
+    border-radius: 20px;
+    margin-left: 5%;
+}
+.drinks .firstChild{
+    margin-left: 10px!important;
+    
+}
+.drinks div img{
+    width: 130px;
+    height: 130px; 
+    transform: translate(15px,-20px);
+}
+.drinks div p{
+    text-align: center;
+    transform: translateY(-20px);
+    font-weight: 900;
+    font-size: 20px;
+}
+ .container p  i{
+    display: none;
+}
+.container h3{
+    text-align: center;
+    font-size: 15px;
+    display: none;
+    transition: all 1s;
+}
+.drinks .active{
+    background-color: #006f44;
+}
